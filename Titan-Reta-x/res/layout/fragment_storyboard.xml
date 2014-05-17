@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Gallery
+        android:id="@+id/fragment_storyboard_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:fadeScrollbars="false"
+         
+        android:background="@drawable/listbackground"
+        android:scrollbarAlwaysDrawHorizontalTrack="true"/>
+
+    <ImageButton
+        android:id="@+id/stopimageButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/playimageButton"
+        android:layout_marginLeft="89dp"
+        android:layout_toRightOf="@+id/playimageButton" />
+
+    <ImageButton
+        android:id="@+id/playimageButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/fragment_storyboard_gallery"
+        android:layout_marginLeft="208dp"
+        android:layout_marginTop="45dp" />
+
+</RelativeLayout>

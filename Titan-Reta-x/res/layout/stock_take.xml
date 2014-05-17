@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".StockTake" >
+
+    <TextView
+        android:id="@+id/stocktake_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/storyboardtitletextView"
+        android:layout_alignBottom="@+id/storyboardtitletextView"
+        android:layout_alignRight="@+id/linearLayout1"
+        android:layout_marginRight="48dp"
+        android:text="count"
+        android:textColor="@color/TextColor"
+        android:textSize="@dimen/TextSize" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="63dp"
+        android:background="@drawable/circularlayout"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/charts_and_graph_graph1_linearlayout"
+            android:layout_width="80pt"
+            android:layout_height="80pt"
+            android:src="@drawable/bluetagicon" />
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scan a Tag"
+            android:textColor="#FFFFFFFF"
+            android:textSize="40dip" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/storyboardtitletextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout1"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="76dp"
+        android:text="Stock Take"
+        android:textColor="@color/TextColor"
+        android:textSize="@dimen/TextSize" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stocktake_count"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/stock_take_matchinventory"
+            style="@style/ButtonText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/storyboardtitletextView"
+            android:layout_below="@+id/stock_take_resetbutton"
+            android:background="@drawable/buttons"
+            android:text="Match Inventory"
+            android:textSize="@dimen/TextSize" />
+        <Space 
+            android:layout_height="30dp"
+            android:layout_width="100dp"
+            />
+
+        <Button
+            android:id="@+id/stock_take_resetbutton"
+            style="@style/ButtonText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/linearLayout1"
+            android:layout_below="@+id/stocktake_count"
+            android:layout_marginTop="68dp"
+            android:background="@drawable/buttons"
+            android:text="Reset"
+            android:textSize="@dimen/TextSize" />
+
+    </LinearLayout>
+
+</RelativeLayout>
